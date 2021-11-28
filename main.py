@@ -7,6 +7,7 @@ from kivy.uix.image import Image, AsyncImage
 
 # RGB Color
 Window.clearcolor =(1,0,0,0)
+Window.size = (400, 600)
 
 class MainApp(App):
     def build(self):
@@ -41,6 +42,7 @@ class MainApp(App):
         layout.add_widget(label)
         layout.add_widget(img)
         layout.add_widget(button)
+
         return layout
 
     def print_press(self,obj):
