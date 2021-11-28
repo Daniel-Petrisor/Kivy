@@ -23,11 +23,14 @@ class MainApp(App):
         #return label
 
         button = Button(text='Print',
-                        size_hint=(0.2,0.1),
-                        font_size='20sp',
                         pos_hint={'center_x': 0.5, 'center_y': 0.2},
+                        size_hint=(None,None),
+                        width=100,
+                        height=50,
+                        font_size='20sp',
                         on_press=self.print_press,
                         on_release=self.print_release,
+                        #size_hint=(0.2, 0.1),
                         )
         #return button
 
@@ -36,8 +39,8 @@ class MainApp(App):
         # return img_async
 
         layout.add_widget(label)
-        layout.add_widget(button)
         layout.add_widget(img)
+        layout.add_widget(button)
         return layout
 
     def print_press(self,obj):
