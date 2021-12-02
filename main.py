@@ -1,3 +1,6 @@
+import kivy
+kivy.require('2.0.0') # replace with your current kivy version !
+
 from kivy.app import App
 from kivy.core.window import Window
 from kivy.uix.boxlayout import BoxLayout

@@ -3,6 +3,7 @@ from kivy.core.window import Window
 from kivy.uix.gridlayout import GridLayout
 from kivy.uix.button import Button
 
+
 # RGB Color
 Window.clearcolor =(1,0,0,0)
 Window.size = (500, 600)
